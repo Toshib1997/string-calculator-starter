@@ -43,6 +43,14 @@ public class StringCalculatorShould {
         assertEquals(stringCalculator.add("1\n2"), 3);
         assertEquals(stringCalculator.add("11\n13"), 24);
     }
+    
+    
+    @Test
+    public void threeNumbersDelimitedAnywayShouldBeSummed() {
+    	 StringCalculator stringCalculator = new StringCalculator();
+        assertEquals(stringCalculator.add("1,2,3"), 6);
+        assertEquals(stringCalculator.add("5\n2\n3"), 10);
+    }
 
 
 }
